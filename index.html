@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="bs-css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yummy</title>
+</head>
+<body class="dark-bg">
+
+
+    <!-- Loading Screen -->
+    <section class="loading">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </section>
+
+
+    <!-- Sidebar  -->
+    <section class="side-nav-menu min-vh-100 position-fixed d-flex top-0">
+        <div class="nav-content d-flex flex-column justify-content-between min-vh-100 p-4 dark-bg">
+            <div class="links">
+                <ul class="list-unstyled">
+                    <li class="py-2 position-relative ser">Search</li>
+                    <li class="py-2 position-relative cat">Categories</li>
+                    <li class="py-2 position-relative area">Area</li>
+                    <li class="py-2 position-relative ingr">Ingredient</li>
+                    <li class="py-2 position-relative contact">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons main-col">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </div>
+                <div class="footer main-col">
+                    <p>LEJockey Â© 2023 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="nav-logo d-flex flex-column justify-content-between py-4 text-center px-2 white-bg">
+            <img src="imgs/logo.png" alt="Logo" style="width: 50px;">
+            <div class="toggleBtn d-flex flex-column align-items-center">
+                <div class="bar1 rounded-2"></div>
+                <div class="bar2 rounded-2"></div>
+                <div class="bar2 rounded-2"></div>
+                <div class="bar3 rounded-2"></div>
+            </div>
+            <div>
+                <i class="fa fa-globe d-block my-2" aria-hidden="true"></i>
+                <i class="fa fa-share-nodes d-block my-2" aria-hidden="true"></i>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Search -->
+    <section class="container w-75" id="searchContainer">
+        <div class="row py-4 ">
+            <div class="col-md-6 ">
+                <input class="form-control  text-white nameSearch" type="text" placeholder="Search By Name">
+            </div>
+            <div class="col-md-6">
+                <input maxlength="1" class="form-control  text-white fLettSearch" type="text" placeholder="Search By First Letter">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main Content -->
+    <section class="min-vh-100 position-relative mx-auto mainContent">
+        <div class="innerLoading">
+            <div class="innerSpinner ">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row py-5 g-4" id="mealData">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="min-vh-100 justify-content-center align-items-center flex-column contactUs dark-bg">
+        <header class="mb-4">
+            <h2 class="text-center">Contact Us</h2>
+        </header>
+        <form action="" class="col-6">
+            <div class="form-input">
+                <input class="form-control bg-light mb" placeholder="Enter Your Name" type="text" id="name" maxlength="25">
+                <i class="fa-solid fa-circle-check text-success-emphasis hide"></i>
+                <i class="fa-solid fa-circle-exclamation text-danger-emphasis hide"></i>
+                <small class="errorMsg text-danger-emphasis nameInput hide">Error Msg</small>
+            </div>
+            <div class="form-input">
+                <input class="form-control  bg-light mb" placeholder="Enter Your Age" type="number" id="age">
+                <i class="fa-solid fa-circle-check text-success-emphasis hide"></i>
+                <i class="fa-solid fa-circle-exclamation text-danger-emphasis hide"></i>
+                <small class="errorMsg text-danger-emphasis nameInput hide">Error Msg</small>
+            </div>
+            <div class="form-input">
+                <input class="form-control  bg-light mb" placeholder="Enter Your Email" type="text" id="mail">
+                <i class="fa-solid fa-circle-check text-success-emphasis hide"></i>
+                <i class="fa-solid fa-circle-exclamation text-danger-emphasis hide"></i>
+                <small class="errorMsg text-danger-emphasis hide">Error Msg</small>
+            </div>
+            <div class="form-input">
+                <input class="form-control  bg-light mb" placeholder="Enter Your Phone number" type="text" id="phone">
+                <i class="fa-solid fa-circle-check text-success-emphasis hide"></i>
+                <i class="fa-solid fa-circle-exclamation text-danger-emphasis hide"></i>
+                <small class="errorMsg text-danger-emphasis hide">Error Msg</small>
+            </div>
+            <div class="form-input">
+                <input class="form-control  bg-light mb" placeholder="Password" type="text" id="pass">
+                <i class="fa-solid fa-circle-check text-success-emphasis hide"></i>
+                <i class="fa-solid fa-circle-exclamation text-danger-emphasis hide"></i>
+                <small class="errorMsg text-danger-emphasis hide">Error Msg</small>
+            </div>
+            <div class="form-input">
+                <input class="form-control  bg-light mb" placeholder="Confirm password" type="text" id="confirmPass">
+                <i class="fa-solid fa-circle-check text-success-emphasis hide"></i>
+                <i class="fa-solid fa-circle-exclamation text-danger-emphasis hide"></i>
+                <small class="errorMsg text-danger-emphasis hide">Error Msg</small>
+            </div>
+            <button  class="btn btn-outline-success w-100 mb-3">Submit</button>
+        </form>
+    </section>
+
+<script src="bs-js/bootstrap.bundle.min.js"></script>
+<script src="jquery-3.6.4.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
